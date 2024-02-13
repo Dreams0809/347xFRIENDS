@@ -20,15 +20,6 @@ app.use('/public', express.static('public'));
 app.use(logger('dev'))
 
 
-// app.use(
-//     session({
-//         secret: 'keyboard cat',
-//         resave: false,
-//         saveUninitialized: false,
-//         store: {mongooseConnection: mongoose.connection}
-//     })
-// )
-
 
 // Use forms for put / delete 
 app.use(methodOverride("_method")); 
@@ -39,11 +30,9 @@ app.use("/", mainRoutes)
 
 
 // Server
-// connectDB().then(() => {
     //Server Running
     app.listen(process.env.PORT, () => {
       console.log(
         `Server is running on ${process.env.PORT}, you better catch it!`
       );
     });
-  // });

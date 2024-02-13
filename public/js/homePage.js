@@ -8,14 +8,14 @@
 // //         (el.style.color = '#' + colors[Math.floor(Math.random() * colors.length)])    
 // // );
 
-colorText = document.querySelectorAll('.font').innerText
+// colorText = document.querySelectorAll('.font').innerText
 
-colorText.forEach(colorWheel)
+// colorText.forEach(colorWheel)
 
-function colorWheel(colorElements){
-    console.log(colorElements) 
+// function colorWheel(colorElements){
+//     console.log(colorElements) 
     
-}
+// }
 
 
 
